@@ -1,0 +1,12 @@
+Analyse de l'Output
+Le serveur démarre et est prêt à recevoir des appels.
+Le client crée un objet Callback et le passe au serveur avec une demande de rappel.
+Le serveur crée un Servant pour gérer l'appel en arrière-plan.
+Après une pause (définie par time), le Servant exécute le callback et appelle la méthode doCallback du client.
+Le client affiche le message reçu du serveur, démontrant le mécanisme de rappel.
+
+
+Conclusion
+Cet exercice montre comment utiliser Java RMI pour implémenter une communication bidirectionnelle entre un client et un
+serveur, avec un mécanisme de callback permettant au serveur de rappeler le client. Cela permet d'améliorer l'interaction
+et la réactivité des applications distribuées.
